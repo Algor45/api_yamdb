@@ -62,7 +62,7 @@ pip install -r requirements.txt
 и замените им ключ по умолчанию в файле:
 
 ```
-yatube/yatube/settings.py
+api_yamdb/api_yamdb/settings.py
 
 SECRET_KEY='Ваш ключ'
 
