@@ -58,6 +58,19 @@ py -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+Перед использованием сгенерируйте новый секретный ключ
+и замените им ключ по умолчанию в файле:
+
+```
+yatube/yatube/settings.py
+
+SECRET_KEY='Ваш ключ'
+
+для генерации ключа можно использовать сайт:
+
+https://djecrety.ir/
+```
+
 Перейти в папку, в которой находится файл manage.py:
 ```
 cd api_yamdb/
