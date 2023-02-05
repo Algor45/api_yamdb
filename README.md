@@ -75,6 +75,19 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+
+#### (Опционально) Заполнение БД.
+Проект поддерживает заполнение базы данных из csv файлов.
+
+Для этого необходимо поместить csv файлы в папку static/data/ и приписать их к моделям
+в файле reviews/management/commands/csv_to_db.py в словаре MODELS_FILES.
+
+Чтобы залить данные в базу необходимо выполнить комманду:
+
+```
+python manage.py csv_to_db
+```
+
 ## Системные требования
 
 Версия Python:
@@ -96,18 +109,6 @@ PyJWT==2.1.0
 pytest==6.2.4
 pytest-django==4.4.0
 pytest-pythonpath==0.7.3
-```
-
-#### (Опционально) Заполнение БД.
-Проект поддерживает заполнение базы данных из csv файлов.
-
-Для этого необходимо поместить csv файлы в папку static/data/ и приписать их к моделям
-в файле reviews/management/commands/csv_to_db.py в словаре MODELS_FILES.
-
-Чтобы залить данные в базу необходимо выполнить комманду:
-
-```
-python manage.py csv_to_db
 ```
 
 ## Примеры
